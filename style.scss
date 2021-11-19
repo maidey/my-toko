@@ -1,0 +1,401 @@
+$gutter: 20px;
+$orange: rgb(225,115,73);
+$baner:#002A36;
+$green: #42b533;
+$l-blue:#49b8d4;
+@font-face {
+    font-family: ran;
+    src: url(font/VarelaRound-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: $baner;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+@media only screen and (min-width: 600px) {
+.main {
+    /* background-color: $baner; */
+    font-family: ran;
+    height: 100%;
+    .nav {
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            i {
+                padding-right: 0.3em;
+                font-size: 1.6em;
+            }
+        }
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: $orange;
+        display: grid;
+        height: 2em;
+        align-items: center;
+        grid-template-areas: 1fr;
+        grid-template-columns: auto 1fr 1fr auto;
+        .menu {
+            padding-left: 1em;
+            text-align: left;
+            ul {
+                display: inline-flex;
+                li {
+                    padding: 0 0.5em 0 0.5em;
+                    list-style: none;
+                    a {
+                        /* display: inline-flex; */
+                        span {
+                            font-size: 10px;
+                            color: $baner;
+                            background-color: $green;
+                            border-radius: 5px;
+                            padding: 0 3px 0 3px;
+                        }
+                    }
+                    a:hover {
+                        color: white;
+                        padding: 0.2em;
+                        border-radius: 5px;
+                        box-shadow: inset #90501e 0px 0px 40px;
+                    }
+                }
+            }
+        }
+        .search {
+            text-align: right;
+            padding-right: 1em;
+            form {
+                #for-search {
+                    background-color: white;
+                    border-color: white;
+                    border-radius: 9px;
+                }
+                button {
+                    background-color: unset;
+                    width: 15px;
+                    height: 15px;
+                    border-style: none;
+                    border-radius: 50%;
+                }
+                button:active,
+                button:hover {
+                    color: white;
+                    padding: 0.3em;
+                    border-radius: 5px;
+                    box-shadow: inset #90501e 0px 0px 40px;
+                }
+            }
+        }
+        .user {
+            a {
+                img {
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    border-style: solid;
+                }
+            }
+        }
+    }
+    .hero {
+        background-color: $baner;
+        position: relative;
+        display: flex;
+    }
+    .menu-s {
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        .main-menu {
+            /* border-top-left-radius: 10px; */
+            border-radius: 10px;
+            display: grid;
+            grid-column-gap: 5px;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows: 4em;
+            width: 50%;
+            box-shadow: grey 4px 4px 9px;
+            /* padding: 0.5em; */
+            /* align-items: center; */
+            /* background-color: $orange; */
+
+            .money {
+                border-right-style: solid;
+                border-width: 0.5px;
+                border-color: lightgrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .main-money {
+                    padding: 0.5em;
+                    display: inline-flex;
+                    .total {
+                        font-size: 1.5em;
+                    }
+                }
+                .count {
+                    color: $green;
+                }
+            }
+            .point {
+                display: flex;
+                flex-direction: column;
+                border-right-style: solid;
+                border-width: 0.5px;
+                border-color: lightgrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5em;
+                .total {
+                    padding-top: 0.2em;
+                    font-size: 1.5em;
+                }
+                .count {
+                    padding-top: 0.5em;
+                    color: $green;
+                }
+
+            }
+            .topup {
+                border-right-style: solid;
+                border-width: 0.5px;
+                border-color: lightgrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 1.2em;
+                }
+            }
+            .addcc {
+                I {
+                    font-size: 1.2em;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .more {
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+        .more-app {
+            width: 50%;
+            display: grid;
+            justify-content: center;
+            grid-gap: 7px;
+            grid-template-columns: repeat(5 , 5em) ;
+            a:hover,
+            a:active {
+                background-color: $orange;
+                border-radius: 5px;
+            }
+            .list-app {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                height: 4em;
+                box-shadow: grey 4px 4px 9px;
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .roll {
+        display: flex;
+        /* width: 70%; */
+        justify-content: center;
+        .scroll {
+            padding-top: 1em;
+            display: flex;
+            /* justify-content: center; */
+            overflow: auto;
+            /* white-space: nowrap; */
+            width: 70%;
+            align-items: center;
+            .app {
+                display: inline-block;
+                .item {
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: white;
+                    border-style: solid;
+                    border-color: $orange;
+                    border-radius: 5px;
+                    width: 4em;
+                    margin-right: 1em;
+                    height: 5em;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    span {
+                        padding-top: 0.2em;
+                        padding-bottom: 0.2em;
+                        text-align: center;
+                        width: 100%;
+                        background-color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .product {
+        padding-top: 1em;
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        .main-product {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 5px;
+            width: 60%;
+            .list-product {
+                /* background-color: grey; */
+                /* height: 14em; */
+                width: 6em;
+                border-style: solid;
+                border-color: $orange;
+                border-width: 1px;
+                border-radius: 5px;
+                h2 {
+                    font-size: 1em;
+                }
+                img {
+                    width: 6em;
+                    height: 6em;
+                }
+                .body-product {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    st {
+                        color: grey;
+                    }
+                    span {
+                        color: $green;
+                    }
+                    a {
+                        background-color: $orange;
+                        text-align: center;
+                        padding: 0.2em;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        margin-top: 2em;
+        background-color: $baner;
+        height: 6em;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        justify-content: center;
+        span {
+            color: white;
+            font-size: 12px;
+        }
+    }
+}
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 40%;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    display: none;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    /* display: inline-block; */
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
