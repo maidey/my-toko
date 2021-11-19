@@ -5,8 +5,9 @@
 ## update info 
 - [x] home page
 - [ ] mobile responsive (next update)
-- [ ] login page
-- [ ] user page
+- [ ] login page (next update)
+- [ ] user page (next update)
+
 apalain yg harus ditambahkan ?, silahkan hubungi saya
  
 ## file 
