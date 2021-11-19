@@ -10,7 +10,7 @@
 - [ ] login page (next update)
 - [ ] user page (next update)
 
-apalain yg harus ditambahkan ?, silahkan hubungi saya
+apa yg harus ditambahkan ?, silahkan hubungi saya
  
 ## file 
 
