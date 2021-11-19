@@ -1,3 +1,5 @@
+`Mohon maaf bila banyak Salah pengetikan`
+
 [DEMO](https://maidey.github.io/my-toko/demo.html)
 
 ![](https://maidey.github.io/my-toko/demo.png)
