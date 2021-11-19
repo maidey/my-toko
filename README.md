@@ -4,10 +4,10 @@
 
 ## update info 
 - [x] home page
-- [] mobile responsive (next update)
-- [] login page
-- [] user page
-- apalain yg harus ditambahkan ?, silahkan hubungi saya
+- [ ] mobile responsive (next update)
+- [ ] login page
+- [ ] user page
+apalain yg harus ditambahkan ?, silahkan hubungi saya
  
 ## file 
 
